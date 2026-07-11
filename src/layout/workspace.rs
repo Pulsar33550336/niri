@@ -1977,10 +1977,6 @@ impl<W: LayoutElement> Workspace<W> {
         self.layout_config.as_ref()
     }
 
-    pub fn scrolling_view_pos(&self) -> f64 {
-        self.scrolling.target_view_pos()
-    }
-
     #[cfg(test)]
     pub fn scrolling(&self) -> &ScrollingSpace<W> {
         &self.scrolling
